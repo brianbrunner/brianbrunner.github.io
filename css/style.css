@@ -1,0 +1,80 @@
+* {
+  margin:0;padding:0;
+}
+html, body {
+  min-width: 100%;
+  min-height: 100%;
+}
+body {
+  color:#696969;
+  background-color:#f3f3f3;
+  font-family:Arial, Helvetica, sans-serif;
+}
+a, a:visited {
+  text-decoration: none;
+  color: #0094DE !important;
+}
+a:hover, a:active {
+  text-decoration: none;
+  color: #00AAFF !important;
+}
+.content {
+  position: relative;
+  width: 720px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.head h1 {
+  color:#898989;
+  padding-right: 16px;
+  font-weight: 300;
+  font-size: 42px;
+  line-height: 50px;
+  text-align: right;
+}
+.head h2 {
+  color:#898989;
+  padding-bottom: 80px;
+  padding-right: 16px;
+  font-size: 16px;
+  text-align: right;
+}
+.back {
+  position: absolute;
+  top: 22px;
+  left: 0;
+}
+article p {
+  line-height: 28px;
+  font-size: 16px;
+  margin: 16px 0;
+}
+article .title h1 {
+  margin:0;
+  line-height: 24px;
+  font-size: 22px;
+  color: #191919;
+}
+article .title * {
+  color: #191919;
+}
+article .title span {
+  font-size: 12px;
+}
+article .title {
+  margin-bottom: 30px;
+}
+article h2, article h1 {
+  margin: 28px 0 16px 0;
+  font-size: 16px;
+  color: #404040;
+}
+article h2 *, article h1 * {
+  color: #404040;
+}
+.pagination {
+  margin-top: 50px;
+  min-width: 100%;
+  text-align: center;
+}
