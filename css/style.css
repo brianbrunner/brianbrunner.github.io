@@ -27,7 +27,6 @@ a:hover, a:active {
 }
 .head h1 {
   color:#898989;
-  padding-right: 16px;
   font-weight: 300;
   font-size: 42px;
   line-height: 50px;
@@ -36,7 +35,6 @@ a:hover, a:active {
 .head h2 {
   color:#898989;
   padding-bottom: 80px;
-  padding-right: 16px;
   font-size: 16px;
   text-align: right;
 }
