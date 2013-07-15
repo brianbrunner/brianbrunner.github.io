@@ -1,0 +1,61 @@
+---
+layout: post
+title:  "Using Postfix to Programatically Parse Emails"
+date:   2013-07-15 11:00:00
+categories: automation postfix
+---
+
+Recently, I've been building my own personal bookmarking service as a way to play around with AngularJS, RethinkDB and NodeJS. I've also felt that the services I was using to catalog my bookmarks were lacking, but that's another story.
+
+Anyway, one feature that I've been meaning to build is a feature that allows you to send bookmarks to the service via email, similar to wath [Pocket](http://getpocket.com/) does. You just send an email to `add@getpocket.com`, and Pocket will scrape out any urls present within the email and put them in your bookmarks. For me, it's proved to be a convenient feature when I'm browsing on Mobile Safari, as it's easy to directly share links from Safari via email.
+
+So, in short, I'm setting out to add this functionality to my own bookmarking app. I plan on using Postfix to receive emails and send them over `https` to my internal API server.
+
+_Step 1 - Setting Up Postfix_
+-----------------------------
+
+A first requirement for this feature is that we're going to need to be able receive emails. There's tons of inbound email services that will do this part for you ([mailgun](http://www.mailgun.com/) and [mandrill](http://mandrill.com/) come to mind), but it's not too complicated to set up a postfix server to do this on your own.
+
+Use whatever flavor of package management software that your linux distro has to get postfix installed. For ubuntu, this would be something like
+
+    sudo apt-get install postfix
+
+You'll be guided through a small bit of setup. All you'll really need to do is set your domain name correctly, since we won't be using this server to send e-mail.
+
+_Step 2 - Set Up Your DNS Records_
+----------------------------------
+
+Next, you'll need to set up your DNS records for receiving mail. You'll need three records to receive an email:
+
+1. An `A` record that points to the IP of the server you're going to be receiving emails on.
+
+2. A `PTR` record, essentially a reverse DNS lookup, that points from the IP of the server to it's domain name.
+
+3. A Mail Exchange, or `MX`, record that lists your all of your mail servers along with their priorities. Since we only have one server in this case, you're only going to have one entry. The format for these records is `priority mail.example.com` where `priority` is an integer.
+
+You should be able to set these all up with whatever DNS service you currently use.
+
+_Step 3 - Set Up Your Email Aliases_
+------------------------------------
+
+Now's where we get to the fun part. We're going to use an email alias that pipes commands over http to your API server using cURL. First, we need to tell postfix to alias all of our emails. Open up `/etc/postfix/main.cf` in your editor of choice and add the following line
+
+    virtual_alias_maps = hash:/etc/postfix/redirect
+
+Now, go ahead and open up `/etc/postfix/redirect`, the file that we just told postfix to look for alias mappings in, and type in the following
+
+    user@exmaple.com        curl_email
+
+Obviously, you'll want to replace `user@example.com` with the real address that you want to be receiving messages at. This tells postfix to map any emails sent to `user@example.com` to be redirected to the `curl_email` alias. You can even use regular expressions in the `redirect` file if you have multiple or dynamically generated addresses that you want to receive mail on.
+
+The last step is to actually create the `curl_email` alias. This alias will pipe the raw content of emails received by postfix to cURL so that they can be sent to whatever service needs to process your emails next. Open up the file `/etc/aliases` and enter the following line
+
+    curl_email: "|curl --data-binary @- http://example.com/email_received"
+
+This line pipes any received messages to `STDIN` which we read into our post body in cURL using the special notation `@-`. Using the `--data-binary` flag rather than the just the normal `-d` flag preserves the exact content of the email. You'll need to replace `http://example.com/email_received` with an actual url that handles post requests.
+
+_Step 4 - Parse That Email!_
+
+You should now be receiving emails at whatever URL you told cURL to use. Actually parsing the emails received is an exercise left to the reader, as you probably want to do something specific to your needs.
+
+And that is it. You now have a way to programtically parse emails.

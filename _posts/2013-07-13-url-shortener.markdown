@@ -14,7 +14,7 @@ The nodejs server will place html pages in Amazon S3 that contain a meta refresh
 
 I don't have any of this set up currently, but hopefully it'll be a quick process to get everything in place. Here goes something.
 
-And just as a side-note, I'm using Draft (http://www.draftin.com) to actually type this post up.
+And just as a side-note, I'm using [Draft](http://www.draftin.com) to actually type this post up.
 
 _10:53 PM_
 ----------

@@ -1,9 +1,16 @@
 * {
   margin:0;padding:0;
 }
+*::selection {
+  background: #FF9C12; /* Safari */
+  }
+*::-moz-selection {
+  background: #FF9C12; /* Firefox */
+}
 html, body {
   min-width: 100%;
   min-height: 100%;
+  font-weight: 300;
 }
 body {
   color:#696969;
@@ -21,46 +28,62 @@ a:hover, a:active {
 .content {
   position: relative;
   width: 720px;
+  padding: 80px;
   margin: 0 auto;
-  padding-top: 20px;
+  padding-top: 40px;
   padding-bottom: 30px;
 }
 .head h1 {
-  color:#898989;
+  color:#999999;
   font-weight: 300;
   font-size: 42px;
   line-height: 50px;
   text-align: right;
 }
 .head h2 {
-  color:#898989;
-  padding-bottom: 80px;
+  color:#999999;
+  margin-bottom: 110px;
   font-size: 16px;
   text-align: right;
 }
 .back {
   position: absolute;
-  top: 22px;
-  left: 0;
+  top: 46px;
+  left: 80px;
+}
+article {
+  position: relative;
 }
 article p {
-  line-height: 28px;
+  line-height: 30px;
   font-size: 16px;
   margin: 16px 0;
 }
+article .title:before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 4px;
+  width: 30px;
+  height: 30px;
+  background-color: #d9d9d9;
+}
 article .title h1 {
   margin:0;
-  line-height: 24px;
-  font-size: 22px;
+  line-height: 32px;
+  font-size: 24px;
   color: #191919;
 }
 article .title * {
   color: #191919;
 }
-article .title span {
+article .title h2 {
+  margin-top: 0;
   font-size: 12px;
 }
 article .title {
+  position: relative;
+  margin-top: 100px;
   margin-bottom: 30px;
 }
 article h2, article h1 {
@@ -72,7 +95,22 @@ article h2 *, article h1 * {
   color: #404040;
 }
 .pagination {
-  margin-top: 50px;
+  margin-top: 70px;
   min-width: 100%;
   text-align: center;
+}
+pre, code {
+  color:#191919;
+  font-size: 14px;
+  background-color: #d9d9d9;
+}
+code {
+  padding:2px 6px;
+}
+pre {
+  padding: 14px;
+  margin: 24px 0;
+}
+pre code {
+  padding:0;
 }
