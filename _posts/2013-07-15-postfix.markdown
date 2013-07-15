@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "Using Postfix to Programatically Parse Emails"
+title:  "Forward Inbound Emails to your HTTP Server using Postfix"
 date:   2013-07-15 11:00:00
-categories: automation postfix
+categories: automation postfix email
 ---
 
 Recently, I've been building my own personal bookmarking service as a way to play around with AngularJS, RethinkDB and NodeJS. I've also felt that the services I was using to catalog my bookmarks were lacking, but that's another story.
 
-Anyway, one feature that I've been meaning to build is a feature that allows you to send bookmarks to the service via email, similar to wath [Pocket](http://getpocket.com/) does. You just send an email to `add@getpocket.com`, and Pocket will scrape out any urls present within the email and put them in your bookmarks. For me, it's proved to be a convenient feature when I'm browsing on Mobile Safari, as it's easy to directly share links from Safari via email.
+Anyway, something that I've been meaning to build is a feature that allows you to send bookmarks to the service via email, similar to wath [Pocket](http://getpocket.com/) does. You just send an email to `add@getpocket.com`, and Pocket will scrape out any urls present within the email and put them in your bookmarks. For me, it's proved to be a convenient feature when I'm browsing on Mobile Safari, as it's easy to directly share links from Safari via email.
 
 So, in short, I'm setting out to add this functionality to my own bookmarking app. I plan on using Postfix to receive emails and send them over `https` to my internal API server.
 
@@ -27,18 +27,18 @@ _Step 2 - Set Up Your DNS Records_
 
 Next, you'll need to set up your DNS records for receiving mail. You'll need three records to receive an email:
 
-1. An `A` record that points to the IP of the server you're going to be receiving emails on.
+1. An `A` record that points to the IP of the server you're going to be receiving emails on. Your `A` record should be for a subdomain like `mail.example.com`.
 
 2. A `PTR` record, essentially a reverse DNS lookup, that points from the IP of the server to it's domain name.
 
-3. A Mail Exchange, or `MX`, record that lists your all of your mail servers along with their priorities. Since we only have one server in this case, you're only going to have one entry. The format for these records is `priority mail.example.com` where `priority` is an integer.
+3. A Mail Exchange, or `MX`, record that lists your all of your mail servers along with their priorities. Since we only have one server in this case, you're only going to have one entry. The format for this records is multiple lines that look like `priority mail.example.com` where `priority` is an integer. So something like `10 mail.example.com` is a valid entry.
 
 You should be able to set these all up with whatever DNS service you currently use.
 
 _Step 3 - Set Up Your Email Aliases_
 ------------------------------------
 
-Now's where we get to the fun part. We're going to use an email alias that pipes commands over http to your API server using cURL. First, we need to tell postfix to alias all of our emails. Open up `/etc/postfix/main.cf` in your editor of choice and add the following line
+Now's where we get to the fun part. We're going to use an email alias that pipes commands over http to your API server using cURL. First, we need to tell postfix to alias our emails. Open up `/etc/postfix/main.cf` in your editor of choice and add the following line
 
     virtual_alias_maps = hash:/etc/postfix/redirect
 
@@ -46,7 +46,7 @@ Now, go ahead and open up `/etc/postfix/redirect`, the file that we just told po
 
     user@exmaple.com        curl_email
 
-Obviously, you'll want to replace `user@example.com` with the real address that you want to be receiving messages at. This tells postfix to map any emails sent to `user@example.com` to be redirected to the `curl_email` alias. You can even use regular expressions in the `redirect` file if you have multiple or dynamically generated addresses that you want to receive mail on.
+Obviously, you need to replace `user@example.com` with the real address that you want to be receiving messages at. This tells postfix to redirect emails sent to `user@example.com` to the `curl_email` alias. You can even use regular expressions in the `redirect` file as the aliased address if you have multiple addresses or dynamically generated addresses that you want to receive mail on.
 
 The last step is to actually create the `curl_email` alias. This alias will pipe the raw content of emails received by postfix to cURL so that they can be sent to whatever service needs to process your emails next. Open up the file `/etc/aliases` and enter the following line
 
@@ -58,4 +58,4 @@ _Step 4 - Parse That Email!_
 
 You should now be receiving emails at whatever URL you told cURL to use. Actually parsing the emails received is an exercise left to the reader, as you probably want to do something specific to your needs.
 
-And that is it. You now have a way to programtically parse emails.
+And that is it. You now have a way to receive emails on your web server.
