@@ -7,7 +7,7 @@ categories: automation postfix email
 
 Recently, I've been building my own personal bookmarking service as a way to play around with AngularJS, RethinkDB and NodeJS. I've also felt that the services I was using to catalog my bookmarks were lacking, but that's another story.
 
-Anyway, something that I've been meaning to build is a feature that allows you to send bookmarks to the service via email, similar to wath [Pocket](http://getpocket.com/) does. You just send an email to `add@getpocket.com`, and Pocket will scrape out any urls present within the email and put them in your bookmarks. For me, it's proved to be a convenient feature when I'm browsing on Mobile Safari, as it's easy to directly share links from Safari via email.
+Anyway, something that I've been meaning to build is a feature that allows you to send bookmarks to the service via email, similar to what [Pocket](http://getpocket.com/) does. You just send an email to `add@getpocket.com`, and Pocket will scrape out any urls present within the email and put them in your bookmarks. For me, it's proved to be a convenient feature when I'm browsing on Mobile Safari, as it's easy to directly share links from Safari via email.
 
 So, in short, I'm setting out to add this functionality to my own bookmarking app. I plan on using Postfix to receive emails and send them over `https` to my internal API server.
 
