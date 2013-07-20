@@ -103,6 +103,7 @@ article h2 *, article h1 * {
   text-align: center;
 }
 pre, code {
+  overflow: scroll;
   color:#191919;
   font-size: 14px;
   background-color: #d9d9d9;
