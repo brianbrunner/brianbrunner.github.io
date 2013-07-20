@@ -10,6 +10,9 @@
 *::-moz-selection {
   background: #FF9C12; /* Firefox */
 }
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
 html, body {
   min-width: 100%;
   min-height: 100%;
