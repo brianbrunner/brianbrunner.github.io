@@ -39,6 +39,9 @@ a:hover, a:active {
   padding-top: 40px;
   padding-bottom: 30px;
 }
+.head {
+  margin-bottom: 110px;
+}
 .head h1 {
   color:#999999;
   font-weight: 300;
@@ -48,9 +51,15 @@ a:hover, a:active {
 }
 .head h2 {
   color:#999999;
-  margin-bottom: 110px;
   font-size: 16px;
   text-align: right;
+}
+.head h2 a {
+  font-family: "brandon-grotesque",sans-serif;
+  color: #FF9C12 !important;
+}
+.head h2 a:hover {
+  color: #ffc53a !important;
 }
 .back {
   position: absolute;
