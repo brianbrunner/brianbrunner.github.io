@@ -14,18 +14,18 @@ So, in short, I'm setting out to add this functionality to my own bookmarking ap
 _Step 1 - Setting Up Postfix_
 -----------------------------
 
-A first requirement for this feature is that we're going to need to be able receive emails. There's tons of inbound email services that will do this part for you ([mailgun](http://www.mailgun.com/) and [mandrill](http://mandrill.com/) come to mind), but it's not too complicated to set up a postfix server to do this on your own.
+A first requirement for this feature is that we're going to need to be able receive emails. There's tons of inbound email services that will do this part for you ([mailgun](http://www.mailgun.com/) and [mandrill](http://mandrill.com/) come to mind), but it's not too complicated to setup a postfix server to do this on your own.
 
 Use whatever flavor of package management software that your linux distro has to get postfix installed. For ubuntu, this would be something like
 
     sudo apt-get install postfix
 
-You'll be guided through a small bit of setup. All you'll really need to do is set your domain name correctly, since we won't be using this server to send e-mail.
+You'll be guided through a small bit of setup. All you'll really need to do is set your domain name correctly, since we won't be using this server to send email.
 
-_Step 2 - Set Up Your DNS Records_
+_Step 2 - Setup Your DNS Records_
 ----------------------------------
 
-Next, you'll need to set up your DNS records for receiving mail. You'll need three records to receive an email:
+Next, you'll need to setup your DNS records for receiving mail. You'll need three records to receive an email:
 
 1. An `A` record that points to the IP of the server you're going to be receiving emails on. Your `A` record should be for a subdomain like `mail.example.com`.
 
@@ -35,7 +35,7 @@ Next, you'll need to set up your DNS records for receiving mail. You'll need thr
 
 You should be able to set these all up with whatever DNS service you currently use.
 
-_Step 3 - Set Up Your Email Aliases_
+_Step 3 - Setup Your Email Aliases_
 ------------------------------------
 
 Now's where we get to the fun part. We're going to use an email alias that pipes emails over http to your API server using `curl`. First, we need to tell postfix to alias our emails. Open up `/etc/postfix/main.cf` in your editor of choice and add the following line
@@ -52,7 +52,7 @@ The last step is to actually create the `curl_email` alias. This alias will pipe
 
     curl_email: "|curl --data-binary @- http://example.com/email_received"
 
-This line pipes any received messages to `STDIN` which we read into our post body in `curl` using the special notation `@-`. Using the `--data-binary` flag rather than the just the normal `-d` flag preserves the exact content of the email. You'll need to replace `http://example.com/email_received` with an actual url that handles post requests.
+This line pipes any received messages to `STDIN`, which we read into our post body in `curl` using the special notation `@-`. Using the `--data-binary` flag rather than the just the normal `-d` flag preserves the exact content of the email. You'll need to replace `http://example.com/email_received` with an actual url that handles post requests.
 
 _Step 4 - Parse That Email!_
 ----------------------------
