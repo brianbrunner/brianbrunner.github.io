@@ -38,7 +38,7 @@ You should be able to set these all up with whatever DNS service you currently u
 _Step 3 - Set Up Your Email Aliases_
 ------------------------------------
 
-Now's where we get to the fun part. We're going to use an email alias that pipes commands over http to your API server using cURL. First, we need to tell postfix to alias our emails. Open up `/etc/postfix/main.cf` in your editor of choice and add the following line
+Now's where we get to the fun part. We're going to use an email alias that pipes emails over http to your API server using `curl`. First, we need to tell postfix to alias our emails. Open up `/etc/postfix/main.cf` in your editor of choice and add the following line
 
     virtual_alias_maps = hash:/etc/postfix/redirect
 
@@ -48,14 +48,15 @@ Now, go ahead and open up `/etc/postfix/redirect`, the file that we just told po
 
 Obviously, you need to replace `user@example.com` with the real address that you want to be receiving messages at. This tells postfix to redirect emails sent to `user@example.com` to the `curl_email` alias. You can even use regular expressions in the `redirect` file as the aliased address if you have multiple addresses or dynamically generated addresses that you want to receive mail on.
 
-The last step is to actually create the `curl_email` alias. This alias will pipe the raw content of emails received by postfix to cURL so that they can be sent to whatever service needs to process your emails next. Open up the file `/etc/aliases` and enter the following line
+The last step is to actually create the `curl_email` alias. This alias will pipe the raw content of emails received by postfix to `curl` so that they can be sent to whatever service needs to process your emails next. Open up the file `/etc/aliases` and enter the following line
 
     curl_email: "|curl --data-binary @- http://example.com/email_received"
 
-This line pipes any received messages to `STDIN` which we read into our post body in cURL using the special notation `@-`. Using the `--data-binary` flag rather than the just the normal `-d` flag preserves the exact content of the email. You'll need to replace `http://example.com/email_received` with an actual url that handles post requests.
+This line pipes any received messages to `STDIN` which we read into our post body in `curl` using the special notation `@-`. Using the `--data-binary` flag rather than the just the normal `-d` flag preserves the exact content of the email. You'll need to replace `http://example.com/email_received` with an actual url that handles post requests.
 
 _Step 4 - Parse That Email!_
+----------------------------
 
-You should now be receiving emails at whatever URL you told cURL to use. Actually parsing the emails received is an exercise left to the reader, as you probably want to do something specific to your needs.
+You should now be receiving emails at whatever URL you told `curl` to use. Actually parsing the emails received by your webserver is an exercise left to the reader, as you probably want to do something specific to your needs.
 
 And that is it. You now have a way to receive emails on your web server.
