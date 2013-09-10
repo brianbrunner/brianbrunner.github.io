@@ -59,4 +59,6 @@ _Step 4 - Parse That Email!_
 
 You should now be receiving emails at whatever URL you told `curl` to use. Actually parsing the emails received by your webserver is an exercise left to the reader, as you probably want to do something specific to your needs.
 
+Just as an aside, if you're using NodeJS, I'd recommend checking out the [mailparser](https://github.com/andris9/mailparser) library by Andris Reinman. It'll save you a ton of headache in extracting data from inbound messages.
+
 And that is it. You now have a way to receive emails on your web server.
