@@ -53,5 +53,5 @@ traveling for six hours.
 
 If the hotel would've added more context with a little extra namespacing, maybe by having their
 desk clerk check both the last and first  names on the reservation or written the full name on 
-the envelope with the key, I wouldn't have been frustrated enough to write this half a week 
+the envelope with the key, I wouldn't have been annoyed enough to write this half a week 
 after the fact.
