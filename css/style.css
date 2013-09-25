@@ -18,9 +18,13 @@ html, body {
   min-height: 100%;
   font-weight: 300;
 }
+.head-wrap {
+  width: 100%;
+  background-color: #0094DE;
+}
 body {
   color:#696969;
-  background-color:#f3f3f3;
+  background-color:#f9f9f9;
   font-family:Arial, Helvetica, sans-serif;
 }
 a, a:visited {
@@ -31,6 +35,12 @@ a:hover, a:active {
   text-decoration: none;
   color: #00AAFF !important;
 }
+hr {
+  border: 0px;
+  height: 2px;
+  width: 100%;
+  background-color: #ddddff
+}
 .content {
   position: relative;
   width: 720px;
@@ -40,17 +50,17 @@ a:hover, a:active {
   padding-bottom: 30px;
 }
 .head {
-  margin-bottom: 110px;
+  margin-bottom: 80px;
 }
 .head h1 {
-  color:#999999;
+  color:#fff;
   font-weight: 300;
   font-size: 42px;
   line-height: 50px;
   text-align: right;
 }
 .head h2 {
-  color:#999999;
+  color:#eee;
   font-size: 16px;
   text-align: right;
 }
@@ -61,10 +71,14 @@ a:hover, a:active {
 .head h2 a:hover {
   color: #ffc53a !important;
 }
-.back {
+body .content .back {
   position: absolute;
-  top: 46px;
+  top: -205px;
   left: 80px;
+  color: #FF9C12 !important;
+}
+.back:hover {
+  color: #ffc53a !important;
 }
 article {
   position: relative;
