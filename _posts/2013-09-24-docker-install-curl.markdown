@@ -49,7 +49,7 @@ You can run an interactive shell in a container using the base `ubuntu` image wi
 
     sudo docker run -i -t ubuntu /bin/bash
 
-
+If everything was successful, you'll end up on a shell prompt inside your newly created container.
 
 --
 

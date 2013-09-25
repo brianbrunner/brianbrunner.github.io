@@ -36,6 +36,7 @@ a:hover, a:active {
   color: #00AAFF !important;
 }
 hr {
+  margin: 40px 0;
   border: 0px;
   height: 2px;
   width: 100%;
