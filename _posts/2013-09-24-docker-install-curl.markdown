@@ -27,20 +27,29 @@ Ubuntu 12.04
 ------------
 
 Because installing docker requires a restart in `12.04`, this install is divided into two 
-scripts. First you'll run
+scripts. First you'll run this command. _Note that this will reboot your machine_.
 
     /bin/sh <(curl -s http://brianbrunner.com/shell/docker/ubuntu/12.04/install_1.sh) 
 
-And then you'll want to run
+After the restart, you'll run the next command.
 
     /bin/sh <(curl -s http://brianbrunner.com/shell/docker/ubuntu/12.04/install_2.sh)
 
 Ubuntu 13.04
 ------------
 
-This is just a one step install. You'll only need to run the following
+This is just a one step install. You'll only need to run the following command:
 
     /bin/sh <(curl -s http://brianbrunner.com/shell/docker/ubuntu/13.04/install.sh)
+
+Testing It Out
+--------------
+
+You can run an interactive shell in a container using the base `ubuntu` image with the command:
+
+    sudo docker run -i -t ubuntu /bin/bash
+
+
 
 --
 
