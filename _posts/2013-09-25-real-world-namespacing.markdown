@@ -5,7 +5,7 @@ date:   2013-09-25 11:00:00
 categories: csirl namespacing
 ---
 
-I spent this past weekend in Stowe, Vermont, as an impostor in a room that didn't belong to me. 
+I spent this past weekend in Stowe, Vermont as an impostor in a room that didn't belong to me. 
 Well, technically, it didn't belong to my fiance, so I guess she was the impostor.
 
 We got to our hotel at around 11PM, too late for checking in at the front desk. We  found what 
