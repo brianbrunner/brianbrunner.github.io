@@ -15,7 +15,7 @@ receipt, I realized that we had gotten keys not to our room, but to the room of 
 Lynch.
 
 I'm not sure if Vicki checked in late too and grabbed our envelope by accident or if the front 
-desk clerk had checked her into out room earlier in the day. Either way, someone had messed up. 
+desk clerk had checked her into our room earlier in the day. Either way, someone had messed up. 
 And really, this all could've been prevented with a little extra namespacing.
 
 Namespacing
@@ -51,6 +51,7 @@ causes errors and makes life confusing. Poor namespacing in real life causes me 
 800 number for my hotel and complain to an unhelpful phone agent in the middle of the night after 
 traveling for six hours.
 
-If the hotel would've added more context by having their desk clerk check both the last and first 
-names on the reservation or written the full name on the envelope with the key, I wouldn't have 
-been frustrated enough to write this half a week after the fact.
+If the hotel would've added more context with a little extra namespacing, maybe by having their
+desk clerk check both the last and first  names on the reservation or written the full name on 
+the envelope with the key, I wouldn't have been frustrated enough to write this half a week 
+after the fact.
