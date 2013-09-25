@@ -5,7 +5,7 @@ date:   2013-08-16 8:50:00
 categories: rethinkdb
 ---
 
-It's been about 2 months since I've done any real Go programming, so I thought I might challenge myself with a little
+It's been about 3 months since I've done any real Go programming, so I thought I might challenge myself with a little
 puzzle. Go is very upfront about being biased towards channels and goroutines for achieving synchronization rather than 
 using traditional synchronization primitives like locks or conditionals. As such, I decided to try my hand at implementing
 Readers-writer locks in Go using just channels and goroutines. 
@@ -18,4 +18,4 @@ A rwlock can be in one of three states:
 * Acquired by one or more readers
 * Acquired by one and only one writer
 
-Representing a rwlock as a state machine simplifies the problem of 
+ 
