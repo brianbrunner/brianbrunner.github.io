@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Sprint Programming - URL Shortener"
-date:   2013-07-12 22:50:00
+date:   2013-07-12 22:40:00
 categories: sprintProgramming urlShortener
 ---
 
