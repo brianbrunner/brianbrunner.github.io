@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Paying Money To Save It And Do More With Less"
+title:  "Paying Money To Save It And Doing More With Less"
 date:   2013-10-23 11:00:00
 categories: automation saas
 ---
@@ -28,9 +28,12 @@ When it comes down to it, all employees, especially software engineers, are
 fucking expensive. In my experience, salaries are almsot always the biggest
 expense for a technology startup.  When you have the choice between having 
 someone spend time setting up a piece of software or just paying a company 
-to do it for you, you should almost always go for the outside solution without
-even really thinking about it. This is especially true when you're 
-organization is still small, as time spent managing and self-hosted solution
-would be better spent building out your product.
+to do it for you, you should almost always go for the outside solution.
+This is especially true when you're organization is still small, as time 
+spent managing and self-hosted solution would be better spent building out
+your core  product.
 
+Using outside software even when you could do it yourself is something that
+I've found comes naturally to those in more business oriented roles. 
+Engineers are, however, notoriuos for reinventing things that are already
 
