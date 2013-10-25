@@ -214,6 +214,7 @@ pre code {
      margin-top: 30px;
   }
   body .content .back {
+    position:absolute;
     margin-left: -160px;
     border-bottom-left-radius: 0;
   }
