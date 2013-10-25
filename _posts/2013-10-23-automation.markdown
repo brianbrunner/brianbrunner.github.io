@@ -26,11 +26,11 @@ It took all of a minute to decide on a managed, paid alternative instead.
 Because it was, without a doubt, much cheaper.
 
 When it comes down to it, all employees, especially software engineers, are 
-fucking expensive. In my experience, salaries are almsot always the biggest
+fucking expensive. In my experience, salaries are almost always the biggest
 expense for a technology startup.  When you have the choice between having 
 someone spend time setting up a piece of software or just paying a company 
 to do it for you, you should almost always go for the outside solution.
-This is especially true when you're organization is still small, as time 
+This is especially true when your organization is still small, as time 
 spent managing a self-hosted solution would be better spent building out
 your core product. So, you know, you can actually make money.
 
@@ -44,7 +44,7 @@ Quite possibly my favorite instance came from a friend who told me that a
 startup he had interviewed at had entirely reimplemented nodejs in house
 because they didn't want to run software that was "not built here".
 It's not exactly the same as node is, by no means, a SaaS product, but the
-idea is the same: stop wasting time on things that have already been done
+idea is the similar: stop wasting time on things that have already been done
 for you.
 
 So, in short, leverage the crap out of SaaS, even if you could do it
