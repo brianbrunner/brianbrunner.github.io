@@ -38,7 +38,8 @@ Using outside software even when you could run something yourself is an idea
 that I've found comes naturally to those in more business oriented roles. 
 Engineers are, however, notorious for reinventing things that there are 
 already existing solutions for. I can't count the number of times I've seen
-people reimplement software that they could just buy for cheap or free.
+people reimplement software that they could just buy for cheap or use for
+free.
 
 Quite possibly my favorite instance came from a friend who told me that a
 startup he had interviewed at had entirely reimplemented nodejs in house
