@@ -11,12 +11,11 @@ or not a candidate is both qualified and a good fit for their team. But there
 is one thing that I strongly believe every single company should do when
 interviewing: **ask FizzBuzz.**
 
-Just to be clear, I don't literally mean that you should ask the specific FizzBuzz
-problem. You can ask any sort of basic problem you want. Count the number of words
-in a sentence that start and end with the same letter. Calulate the 
-[Levenshtein distance](http://en.wikipedia.org/wiki/Levenshtein_distance) between
-two words. And so on. The point is to figure out whether or not someone can actually 
-code.
+Just to be clear, I don't literally mean that you should ask the specific [FizzBuzz
+problem](http://en.wikipedia.org/wiki/Fizz_buzz). You can ask any sort of basic 
+problem you want. Count the number of words in a sentence that start and end with 
+the same letter. Print out every other odd number in a list. And so on. The point 
+is to figure out whether or not someone can actually code.
 
 Don't give a candidate a day long programming assignment. Don't try and bring
 them on as a contractor for a short stint. Don't do a code review of a repo on 
