@@ -163,6 +163,9 @@ pre {
 pre code {
   padding:0;
 }
+strong {
+  color: #000;
+}
 @media only screen and (max-device-width: 480px) {
   .content-wrap, .head-wrap {
     min-width: 320px !important;

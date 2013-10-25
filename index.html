@@ -219,7 +219,7 @@ function mce_success_cb(resp){
   	{% endif %}
   	<span class="page_number ">[{{ paginator.page }}/{{ paginator.total_pages }}]</span>
   	{% if paginator.next_page %}
-    	<a href="{{ paginator.next_page_path }}" class="next">Next</a>
+    	<a href="{{ paginator.next_page_path }}" class="next">Next &raquo;</a>
   	{% else %}
     	<span class="next ">Next &raquo;</span>
   	{% endif %}
