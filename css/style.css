@@ -19,6 +19,7 @@ html, body {
   font-weight: 300;
 }
 .head-wrap {
+  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
@@ -161,6 +162,9 @@ pre code {
 @media only screen and (max-device-width: 480px) {
   .content-wrap, .head-wrap {
     min-width: 320px !important;
+  }
+  .head-wrap {
+    width: auto !important;
   }
   .content-wrap {
     box-shadow: 0px -2px 2px rgba(0,0,0,0.2) !important;
