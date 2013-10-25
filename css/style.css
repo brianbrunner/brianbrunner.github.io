@@ -36,6 +36,8 @@ body > .content-wrap {
   margin-top: 246px;
   z-index: 100;
   width: 100%;
+  left:0;
+  top:0;
   background-color: #f9f9f9;
 }
 a, a:visited {
