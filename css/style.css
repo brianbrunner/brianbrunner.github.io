@@ -32,7 +32,7 @@ body {
 }
 body > .content-wrap {
   position: relative;
-  box-shadow: 0px -5px 5px #0084CE;
+  box-shadow: 0px -5px 5px rgba(0,0,0,0.3);
   margin-top: 246px;
   z-index: 100;
   background-color: #f9f9f9;
@@ -84,9 +84,9 @@ hr {
 }
 body .content .back {
   position: fixed;
-  top: 40px;
+  top: 60px;
   left: 50%;
-  margin-left: -360px;
+  margin-left: -350px;
   color: #FF9C12 !important;
 }
 .back:hover {
