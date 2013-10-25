@@ -58,10 +58,8 @@ hr {
 .content {
   position: relative;
   width: 720px;
-  padding: 80px;
+  padding: 40px 80px;
   margin: 0 auto;
-  padding-top: 40px;
-  padding-bottom: 30px;
 }
 .head {
   margin-bottom: 80px;
