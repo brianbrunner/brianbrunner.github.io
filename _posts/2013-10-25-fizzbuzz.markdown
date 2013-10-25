@@ -1,0 +1,35 @@
+---
+layout: post
+title:  "For the Love of God, Ask FizzBuzz"
+date:   2013-10-25 11:00:00
+categories: interviews
+---
+
+Software engineering interviews are a very open-ended art form. Every company
+puts their own particular spin on things so that they can figure out whether
+or not a candidate is both qualified and a good fit for their team. But there 
+is one thing that I strongly believe every single company should do when
+interviewing: **ask FizzBuzz.**
+
+Just to be clear, I don't literally mean that you should ask the specific FizzBuzz
+problem. You can ask any sort of basic problem you want. Count the number of words
+in a sentence that start and end with the same letter. Calulate the 
+[Levenshtein distance](http://en.wikipedia.org/wiki/Levenshtein_distance) between
+two words. And so on. The point is to figure out whether or not someone can actually 
+code.
+
+Don't give a candidate a day long programming assignment. Don't try and bring
+them on as a contractor for a short stint. Don't do a code review of a repo on 
+their github. Don't do much of anything until you've established that they can 
+solve a trivial problem without any sort of fuss.
+
+This was all brought up last night when a friend of mine asked for advice on how
+to conduct a technical interview. I suggested a FizzBuzz type problem (among other
+things) and he was in a small state of disbelief that something so simple was a
+necessary question to ask. I reassured him that, yes, it was necessary, as I have
+seen people flounder on questions like these.
+
+A solid answer to FizzBuzz is like a firm handshake when meeting your new boss. 
+It's like opening the door for your date. It's an introduction that sets a 
+minimum bar and guarantees that neither the interviewer nor the candidate is 
+wasting the other's time.
