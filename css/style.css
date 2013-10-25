@@ -87,12 +87,16 @@ hr {
 }
 body .content .back {
   position: fixed;
-  top: 60px;
+  top: 0px;
   left: 50%;
-  margin-left: -350px;
+  margin-left: -340px;
+  padding: 10px;
   color: #FF9C12 !important;
+  background-color: #00A4EE;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
 }
-.back:hover {
+body .content .back:hover {
   color: #ffc53a !important;
 }
 article {
@@ -208,5 +212,9 @@ pre code {
   }
   .pagination {
      margin-top: 30px;
+  }
+  body .content .back {
+    margin-left: -160px;
+    border-bottom-left-radius: 0;
   }
 }
