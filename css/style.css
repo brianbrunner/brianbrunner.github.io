@@ -97,7 +97,7 @@ hr {
   font-family: "brandon-grotesque",sans-serif;
   background-color: #FF9C12 !important;
   padding: 4px 6px 5px;
-  margin: 4px 0;
+  margin: 4px 0 4px 6px;
   color: #fff !important;
 }
 .head h2 a:hover {
