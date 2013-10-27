@@ -56,6 +56,7 @@ body > .content-wrap {
   background-color: #fcfaf9;
 }
 a, a:visited {
+  word-wrap: break-word;
   text-decoration: none;
   color: #0094DE !important;
 }
@@ -110,13 +111,13 @@ body .content .back {
   left: 50%;
   margin-left: -340px;
   padding: 10px;
-  color: #FF9C12 !important;
-  background-color: #00A4EE;
+  color: #fff !important;
+  background-color: #FF9C12;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
 body .content .back:hover {
-  color: #ffc53a !important;
+  background-color: #ffc53a !important;
 }
 article {
   position: relative;
@@ -224,6 +225,10 @@ strong {
   article .title {
     margin-top: 60px;
   }
+  article p, article li, article code, article pre {
+    font-size: 14px;
+    line-height: 28px;
+  }
   article .title:before {
     left: 3px;
     top: -36px;
@@ -235,14 +240,14 @@ strong {
     margin-top:10px;
   }
   .head {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
   .pagination {
      margin-top: 30px;
   }
   body .content .back {
     position:absolute;
-    margin-left: -140px;
-    top: 180px;
+    margin-left: -155px;
+    top: 190px;
   }
 }
