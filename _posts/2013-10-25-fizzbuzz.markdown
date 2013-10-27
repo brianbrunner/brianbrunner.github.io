@@ -12,8 +12,8 @@ is one thing that I strongly believe every single company should do when
 interviewing: **ask FizzBuzz.**
 
 Just to be clear, I don't literally mean that you should ask the specific [FizzBuzz
-problem](http://en.wikipedia.org/wiki/Fizz_buzz). You can ask any sort of basic, 
-non-brain teaser problem you want. 
+problem](http://en.wikipedia.org/wiki/Fizz_buzz#Other_uses). You can ask any
+ sort of basic, non-brain teaser problem you want. 
 
 * Count the number of words in a sentence that start and end with the same letter.
 * Print out every other odd number in a list. 
