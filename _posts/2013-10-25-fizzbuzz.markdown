@@ -49,5 +49,5 @@ wasting the other's time.
 <!---
 ---
 
-_Please head on over the Hacker News to [leave comments]()_
+_Please head on over to Hacker News to [leave comments]()_
 -->
