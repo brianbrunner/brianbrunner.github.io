@@ -25,6 +25,21 @@ html, body {
   left: 0;
   background-color: #0094DE;
 }
+ol, ul {
+  list-style-position: inside;
+  padding: 0px 10px;
+}
+ul {
+  list-style: none;
+}
+ul li:before {
+  content: "*";
+  color: #FF9C12;
+  margin-right: 8px;
+}
+li {
+  margin-bottom: 12px;
+}
 body {
   color:#696969;
   background-color:#fcfaf9;
@@ -49,11 +64,11 @@ a:hover, a:active {
   color: #00AAFF !important;
 }
 hr {
-  margin: 40px 0;
+  margin: 25px 0;
   border: 0px;
   height: 2px;
   width: 100%;
-  background-color: #ddddff
+  background-color: #fff0aa;
 }
 .content {
   position: relative;
@@ -77,11 +92,16 @@ hr {
   text-align: right;
 }
 .head h2 a {
+  display: inline-block;
+  border-radius: 3px;
   font-family: "brandon-grotesque",sans-serif;
-  color: #FF9C12 !important;
+  background-color: #FF9C12 !important;
+  padding: 4px 6px 5px;
+  margin: 4px 0;
+  color: #fff !important;
 }
 .head h2 a:hover {
-  color: #ffc53a !important;
+  background-color: #ffc53a !important;
 }
 body .content .back {
   position: fixed;
@@ -166,6 +186,12 @@ pre code {
 }
 strong {
   color: #000;
+}
+.icon-github:before {
+  content: "\e600";
+}
+.icon-twitter:before {
+  content: "\e601";
 }
 @media only screen and (max-device-width: 480px) {
   .content-wrap, .head-wrap {

@@ -12,15 +12,28 @@ is one thing that I strongly believe every single company should do when
 interviewing: **ask FizzBuzz.**
 
 Just to be clear, I don't literally mean that you should ask the specific [FizzBuzz
-problem](http://en.wikipedia.org/wiki/Fizz_buzz). You can ask any sort of basic 
-problem you want. Count the number of words in a sentence that start and end with 
-the same letter. Print out every other odd number in a list. And so on. The point 
-is to figure out whether or not someone can actually code.
+problem](http://en.wikipedia.org/wiki/Fizz_buzz). You can ask any sort of basic, 
+non-brain teaser problem you want. 
+
+* Count the number of words in a sentence that start and end with the same letter.
+* Print out every other odd number in a list. 
+* Or, to blatantly steal a question that one of my coworkers likes to ask, 
+  print out the diagonals of a matrix. 
+
+And so on. The point is to figure out whether or not someone can actually code.
 
 Don't give a candidate a day long programming assignment. Don't try and bring
 them on as a contractor for a short stint. Don't do a code review of a repo on 
-their github. Don't do much of anything until you've established that they can 
-solve a trivial problem without any sort of fuss.
+their github. Don't do much of anything, not until you've established that they 
+can solve a trivial problem without any sort of fuss.
+
+A good resume with a long list of well-known companies and a degree from a 
+top-tier engineering school doesn't guarantee anything. Even someone who sounds
+competent on a technical phone-screen might not be able to put down simple code.
+And to reiterate, I'm not talking about the brain-teaser type problems that
+pretty much everyone, [including Google](http://www.theatlantic.com/business/archive/2013/06/google-finally-admits-that-its-infamous-brainteasers-were-completely-useless-for-hiring/277053/),
+knows are useless. It should be something that you could write in under a few  
+minutes while you are hung-over on a Friday morning. Before your first cup of coffee.
 
 This was all brought up last night when a friend of mine asked for advice on how
 to conduct a technical interview. I suggested a FizzBuzz type problem (among other
@@ -28,7 +41,11 @@ things) and he was in a small state of disbelief that something so simple was a
 necessary question to ask. I reassured him that, yes, it was necessary, as I have
 seen people flounder on questions like these.
 
-A solid answer to FizzBuzz is like a firm handshake when meeting your new boss. 
-It's like opening the door for your date. It's an introduction that sets a 
+A solid answer to FizzBuzz is like a firm handshake when meeting your new boss
+or like opening the door for your date. It's an introduction that sets a 
 minimum bar and guarantees that neither the interviewer nor the candidate is 
 wasting the other's time.
+
+---
+
+_Please head on over the Hacker News to [leave comments]()_
