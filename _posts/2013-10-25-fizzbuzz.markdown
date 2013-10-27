@@ -34,7 +34,7 @@ top-tier engineering school doesn't guarantee anything. Even someone who sounds
 competent on a technical phone-screen might not be able to put down simple code.
 And to reiterate, I'm not talking about the brain-teaser type problems that
 pretty much everyone, [including Google](http://www.theatlantic.com/business/archive/2013/06/google-finally-admits-that-its-infamous-brainteasers-were-completely-useless-for-hiring/277053/),
-knows are useless. It should be something that you could write in under a few  
+knows are useless. It should be something that you could write in under a few 
 minutes while you are hung-over on a Friday morning. Before your first cup of coffee.
 
 This was all brought up last night when a friend of mine asked for advice on how
