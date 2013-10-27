@@ -8,6 +8,10 @@ layout: default
 		<h2 class="meta">{{ page.date | date_to_string }}</h2>
 	</div>
 	{{ content }}
+  {% if page.comments %}
+    <hr/>
+    {{page.comments}}
+  {% endif %}
 </article>
 <!-- Begin MailChimp Signup Form -->
 <link href="http://cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">

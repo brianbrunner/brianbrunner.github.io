@@ -3,6 +3,8 @@ layout: post
 title:  "For the Love of God, Ask FizzBuzz"
 date:   2013-10-25 11:00:00
 categories: interviews
+commentslink: "https://news.ycombinator.com/item?id=6622932"
+comments: "Head over to the <a href='https://news.ycombinator.com/item?id=6622932'>comments on Hacker News</a> to discuss this article"
 ---
 
 Software engineering interviews are a very open-ended art form. Every company

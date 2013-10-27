@@ -8,7 +8,11 @@ title: bsquared
  	<article>
  		<div class='title'>
  			<h1>{{ post.title }}</h1>
- 			<h2>{{ post.date | date_to_string }} | <a href="{{post.url}}">Permalink</a></h2>
+ 			<h2>{{ post.date | date_to_string }} | 
+          {%if post.commentslink %} 
+            <a href="{{post.commentslink}}" target="_blank">Commments</a>  | 
+          {% endif %}
+          <a href="{{post.url}}">Permalink</a></h2>
  		</div>
  		{{ post.content }}
  	</article>
