@@ -110,7 +110,7 @@ body .content .back {
   font-size: 16px;
   left: 50%;
   margin-left: -340px;
-  padding: 10px;
+  padding: 10px 14px;
   color: #fff !important;
   background-color: #FF9C12;
   border-top-left-radius: 3px;
@@ -249,5 +249,6 @@ strong {
     position:absolute;
     margin-left: -155px;
     top: 190px;
+    padding: 10px;
   }
 }
