@@ -6,7 +6,7 @@
 }
 *::selection {
   background: #FF9C12; /* Safari */
-  }
+}
 *::-moz-selection {
   background: #FF9C12; /* Firefox */
 }
@@ -248,7 +248,7 @@ strong {
   body .content .back {
     position:absolute;
     margin-left: -155px;
-    top: 190px;
+    top: 194px;
     padding: 10px;
   }
 }
