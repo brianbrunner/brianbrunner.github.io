@@ -46,6 +46,8 @@ or like opening the door for your date. It's an introduction that sets a
 minimum bar and guarantees that neither the interviewer nor the candidate is 
 wasting the other's time.
 
+<!---
 ---
 
 _Please head on over the Hacker News to [leave comments]()_
+-->
