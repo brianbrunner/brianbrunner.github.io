@@ -292,7 +292,7 @@ strong {
   article .title {
     margin-top: 60px;
   }
-  article p, article li, article code, article pre {
+  article p, article li, article code, article pre, article footer {
     font-size: 14px;
     line-height: 28px;
   }
