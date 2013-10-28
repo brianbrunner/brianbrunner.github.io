@@ -323,3 +323,33 @@ strong {
     right: 15px;
   }
 }
+@media only screen and (max-device-width: 480px) and (orientation: landscape) {
+  article p, article footer {
+    line-height: 26px;
+    font-size: 14px;
+    margin: 14px 0;
+  }
+  .up-next {
+    margin-bottom: -14px;
+    width: 306px;
+    right: 5px;
+  }
+  .up-next .title {
+    font-size: 12px;
+    padding: 3px;
+    display: block !important;
+    float: left;
+  }
+  .up-next .body {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 3px;
+    display: block !important;
+    float: left;
+    overflow: hidden;
+    width: 185px;
+    margin-left: 4px;
+    font-size: 12px;
+    height: 12px;
+  }
+}
