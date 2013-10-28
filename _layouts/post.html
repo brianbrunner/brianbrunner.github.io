@@ -214,5 +214,24 @@ function mce_success_cb(resp){
     }
 }
 
+var shown = false
+$(window).scroll(function(){
+  if ($(window).scrollTop() + $(window).height() > $(document).height() - 800) {
+    if (!shown) {
+      shown = true
+      $('.up-next').css({'bottom':'20px'})
+    }
+  } else if (shown) {
+    shown = false
+    console.log("AFDSF")
+    $('.up-next').css({'bottom':'-400px'})
+  }
+})
 </script>
 <!--End mc_embed_signup-->
+{% if page.previous.url %} 
+  <a href="{{page.previous.url}}" class='up-next'>
+    <span class='title'>Read This Next</span>
+    <span class='body'>{{page.previous.title}}</span>
+  </a> 
+{% endif %} 
