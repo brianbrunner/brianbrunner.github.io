@@ -92,7 +92,7 @@ hr {
   font-size: 16px;
   text-align: right;
 }
-.head h2 a {
+.head h2 a, article footer .twitter {
   display: inline-block;
   border-radius: 3px;
   border: 2px solid #fff;
@@ -102,7 +102,10 @@ hr {
   margin: 4px 0 4px 6px;
   color: #fff !important;
 }
-.head h2 a:hover {
+article footer .twitter {
+  border: none;
+}
+.head h2 a:hover, article footer .twitter:hover {
   background-color: #50A9FF !important;
 }
 body .content .back {
@@ -111,6 +114,7 @@ body .content .back {
   font-size: 16px;
   left: 50%;
   margin-left: -340px;
+  display: inline-block;
   padding: 10px 14px 20px 14px;
   color: #fff !important;
   background-color: #FF9C12;
@@ -123,10 +127,13 @@ body .content .back:hover {
 article {
   position: relative;
 }
-article p {
+article p, article footer {
   line-height: 30px;
   font-size: 16px;
   margin: 16px 0;
+}
+article footer {
+  margin-top:60px;
 }
 article .title:before {
   content: "";
@@ -217,6 +224,8 @@ strong {
 }
 .icon-twitter:before {
   content: "\e601";
+  margin-right: 4px;
+  margin-left: 2px;
 }
 @media only screen and (max-device-width: 480px) {
   .content-wrap, .head-wrap {
@@ -272,7 +281,7 @@ strong {
   body .content .back {
     position:absolute;
     margin-left: -155px;
-    top: 197px;
+    top: 217px;
     padding: 10px;
   }
 }
