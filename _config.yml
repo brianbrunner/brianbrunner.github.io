@@ -1,3 +1,4 @@
 name: Your New Jekyll Site
 pygments: true
-paginate: 3
+paginate: 5
+excerpt_separator: "<!-- more -->"

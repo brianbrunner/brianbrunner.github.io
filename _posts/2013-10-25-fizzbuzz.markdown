@@ -24,6 +24,8 @@ problem](http://en.wikipedia.org/wiki/Fizz_buzz#Other_uses). You can ask any
 
 And so on. The point is to figure out whether or not someone can actually code.
 
+<!-- more -->
+
 Don't give a candidate a day long programming assignment. Don't try and bring
 them on as a contractor for a short stint. Don't do a code review of a repo on 
 their github. Don't do much of anything, not until you've established that they 

@@ -25,6 +25,8 @@ offered to set up [Jenkins](http://jenkins-ci.org/) to take care of it.
 It took all of a minute to decide on a managed, paid alternative instead. 
 Because it was, without a doubt, much cheaper.
 
+<!-- more -->
+
 When it comes down to it, all employees, especially software engineers, are 
 fucking expensive. In my experience, salaries are almost always the biggest
 expense for a technology startup.  When you have the choice between having 

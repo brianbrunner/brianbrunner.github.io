@@ -16,6 +16,8 @@ I don't have any of this set up currently, but hopefully it'll be a quick proces
 
 And just as a side-note, I'm using [Draft](http://www.draftin.com) to actually type this post up.
 
+<!-- more -->
+
 _10:53 PM_
 ----------
 

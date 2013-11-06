@@ -11,6 +11,8 @@ Anyway, something that I've been meaning to build is a feature that allows you t
 
 So, in short, I'm setting out to add this functionality to my own bookmarking app. I plan on using Postfix to receive emails and send them over `https` to my internal API server.
 
+<!-- more -->
+
 _Step 1 - Setting Up Postfix_
 -----------------------------
 

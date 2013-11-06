@@ -2,6 +2,7 @@
 layout: post
 title:  "Computer Science in Real Life: Namespacing"
 date:   2013-09-25 11:00:00
+quote: In computer science, namespacing is a solution to the problem of having too few good, sensible names.
 categories: csirl namespacing
 ---
 
@@ -17,6 +18,8 @@ Lynch.
 I'm not sure if Vicki checked in late too and grabbed our envelope by accident or if the front 
 desk clerk had checked her into our room earlier in the day. Either way, someone had messed up. 
 And really, this all could've been prevented with a little extra namespacing.
+
+<!-- more -->
 
 Namespacing
 ===========
