@@ -13,4 +13,6 @@ Japan. Don't get me wrong, I love software engineering and at times it can be
 very exciting, but, at the end of the day, I type on a keyboard for a living.
 
 Four months ago, however, I received what may be my absolute favorite recruiting
-email. It's subject line 
+email. It's subject line was "Exciting company is looking for Full Stack mutants!"
+It triggered a series of emotions for me. I was first confused. Are you suggesting
+that 
