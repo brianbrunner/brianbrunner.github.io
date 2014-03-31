@@ -15,7 +15,7 @@ In Python, making HTTP requests is shockingly cumbersome. A basic `GET` request 
     response = urllib2.urlopen('http://example.org/')
     html = response.read()
 
-But once you start getting into more complicated things, you enter a world of increasingly complicated. For example, a post request looks like this.
+But once you start getting into more complicated things, you enter a world that grows increasingly more painful. For example, a post request looks like this.
 
     import urllib
     import urllib2
