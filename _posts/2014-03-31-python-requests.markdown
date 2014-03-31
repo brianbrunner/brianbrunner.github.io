@@ -3,8 +3,8 @@ layout: post
 title:  "Replacing the Standard Library - Python Requests"
 date:   2014-03-31 9:00:00
 categories: stdlibsucks
-commentslink: "https://news.ycombinator.com/item?id="
-comments: "Head over to the <a href='https://news.ycombinator.com/item?id='>comments on Hacker News</a> to discuss this article"
+commentslink: "https://news.ycombinator.com/item?id=7502241"
+comments: "Head over to the <a href='https://news.ycombinator.com/item?id=7502241'>comments on Hacker News</a> to discuss this article"
 ---
 
 *Sometimes, a language's standard library is so poorly exposed, undocumented or outdated that it warrants using an external package to replace it.*
