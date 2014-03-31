@@ -32,6 +32,8 @@ But once you start getting into more complicated things, you enter a world of in
 
 And if you need to get `json` back, that's another `import` you need to remember. If you want to add in auth or coookies or read compressed data or do anything else that is totally fair game for interacting with HTTP services, `urllib`/`urllib2` pretty much sucks. I'm not going to go into any more examples, because we'd be here all day trying to sort out issues.
 
+<!-- more -->
+
 For a modern language, Python is not the best at interacting with the web. Thankfully, there's a solution that many of you probably know about. [requests](http://docs.python-requests.org/en/latest/) is a Python package that, as the name suggests, makes it easy to write HTTP requests. The above examples become single lines of code, and many, many things that are a nightmare with the standard library are made easy.
 
 A `GET` request with json
