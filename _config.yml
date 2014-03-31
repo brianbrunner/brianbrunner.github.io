@@ -1,4 +1,5 @@
-name: Your New Jekyll Site
+name: Brian Brunner
 pygments: true
 paginate: 5
 excerpt_separator: "<!-- more -->"
+encoding: utf-8

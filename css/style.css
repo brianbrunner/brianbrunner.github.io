@@ -65,6 +65,22 @@ article blockquote, article header, article section, article footer, .inner {
   color: #fff;
   font-weight: 300;
 }
+.header .social-links
+{
+  margin-top: 5px;
+  text-align: right;
+}
+.header .social-links a {
+  text-align: center;
+  width: 24px;
+  margin-left: 5px;
+  color: #fff !important;
+  font-size: 26px;
+  font-family: FontAwesome !important;
+}
+.header .social-links a:hover {
+  color: #ff1140 !important;
+}
 .header.minimized {
   position: fixed;
   top: 15px;
