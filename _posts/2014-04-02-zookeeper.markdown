@@ -3,8 +3,8 @@ layout: post
 title:  "Zookeeper For Distributed Coordination"
 date:   2014-04-02 9:00:00
 categories: zookeeper redis
-commentslink: "https://news.ycombinator.com/item?id=7502241"
-comments: "Head over to the <a href='https://news.ycombinator.com/item?id=7502241'>comments on Hacker News</a> to discuss this article"
+# commentslink: "https://news.ycombinator.com/item?id=7502241"
+# comments: "Head over to the <a href='https://news.ycombinator.com/item?id=7502241'>comments on Hacker News</a> to discuss this article"
 ---
 
 Building distributed systems is hard work. Consensus algorithms like [Paxos](http://en.wikipedia.org/wiki/Paxos_(computer_science)

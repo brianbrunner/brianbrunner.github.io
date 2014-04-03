@@ -1,0 +1,43 @@
+---
+layout: post
+title:  "Post It Notes > Software Project Organization"
+date:   2014-04-03 9:00:00
+categories: todo postits
+# commentslink: "https://news.ycombinator.com/item?id=7502241"
+# comments: "Head over to the <a href='https://news.ycombinator.com/item?id=7502241'>comments on Hacker News</a> to discuss this article"
+---
+
+I have a really hard time using most task management and organization software. Jira is too complex
+for me. Trello requires you to put in a ton of work to develop a system to use it. Asana might be
+great for managing business-oriented work, but it just doesn't seem to be that good for managing 
+software development. 
+
+Maybe I just don't get it or I'm out of touch, but I've yet to find anything that works better for
+me than post it notes.
+
+<!-- more -->
+
+Seriously. I manage tasks by keeping a huge number of post it notes stuck to my desk and my monitor.
+When I work with a team, I typically take tasks assigned to me on whatever lackluster team 
+management solution we're using and physically write them out. I can stare at everything I need to do.
+I can easily prioritize things by changing their physical order. When I'm done with a task, I get
+to actually tear the post it off my desk and throw it away. It's a nice cathartic experience.
+
+If I'm honest, Trello has definitely come the _closest_ to being a good product. It is, in many ways,
+digital post its. It has cards that you can write on. You can organize the cards into lists. The lists
+can be grouped together into boards. 
+
+In my experience, however, Trello tends to fall apart when you have a single  board being used to 
+track tasks for more than two or three people. It just gets too cluttered. I also dislike the sheer 
+amount of cruft that you can add to any single card. You can tag things, add attachments, add 
+checklists (tasks within tasks), make comments, @ mention people and a whole slew of other things. 
+It quickly can become a nightmare. You can try to develop processes on top of trello, but making a
+team actually use those processes correctly can be tough.
+
+So, am I calling for another new task manager? Not in the slightest. There are too many of them as
+it is. I'm just saying that, if you really want to be effective at task management, consider post
+its. They've been around forever, they work great, and they'll cost you less than the $10 bucks a
+seat you're paying for your fancy task management software.
+
+_(Since keeping a stack of post its with you at all times is impractical and just ridiculous, I do, 
+despite its shortcomings, begrudgingly recommend Trello.)_
