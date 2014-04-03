@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Learn New Languages By Building Redis"
-date:   2014-04-01 9:00:00
-categories: redis languages
-commentslink: "https://news.ycombinator.com/item?id=7519929"
-comments: "Head over to the <a href='https://news.ycombinator.com/item?id=7519929'>comments on Hacker News</a> to discuss this article"
+title:  "Zookeeper For Distributed Coordination"
+date:   2014-04-02 9:00:00
+categories: zookeeper languages
+commentslink: "https://news.ycombinator.com/item?id=7502241"
+comments: "Head over to the <a href='https://news.ycombinator.com/item?id=7502241'>comments on Hacker News</a> to discuss this article"
 ---
 
 When I'm learning a new language, I'll often start with a widely recognized guide (something like
@@ -24,8 +24,6 @@ To build redis, you need to be able to do a pretty wide number of things.
 * Understand concurrency (multiple clients, one underlying datastore)
 * Understand object serialization for writing objects to your backup file
 * Understand how to structure a project in your new language
-
-<!-- more -->
 
 And that is, by no means, an exhaustive list. I like to see if can come up with a way
 to allow for pluggable data types for adding things like [tries](http://en.wikipedia.org/wiki/Trie)
