@@ -3,8 +3,8 @@ layout: post
 title:  "Learn New Languages By Building Redis"
 date:   2014-04-01 9:00:00
 categories: redis languages
-commentslink: "https://news.ycombinator.com/item?id=7502241"
-comments: "Head over to the <a href='https://news.ycombinator.com/item?id=7502241'>comments on Hacker News</a> to discuss this article"
+commentslink: "https://news.ycombinator.com/item?id=7519929"
+comments: "Head over to the <a href='https://news.ycombinator.com/item?id=7519929'>comments on Hacker News</a> to discuss this article"
 ---
 
 When I'm learning a new language, I'll often start with a widely recognized guide (something like
