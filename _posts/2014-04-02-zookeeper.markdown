@@ -2,36 +2,36 @@
 layout: post
 title:  "Zookeeper For Distributed Coordination"
 date:   2014-04-02 9:00:00
-categories: zookeeper languages
+categories: zookeeper redis
 commentslink: "https://news.ycombinator.com/item?id=7502241"
 comments: "Head over to the <a href='https://news.ycombinator.com/item?id=7502241'>comments on Hacker News</a> to discuss this article"
 ---
 
-When I'm learning a new language, I'll often start with a widely recognized guide (something like
-[Learn You A Haskell](http://learnyouahaskell.com/)) and then, almost always, my next step
-is to go full steam and build a clone of [redis](http://redis.io/). My goal is to get a
-working datastore that speaks the redis protocol, saves to disk, and implements all of the
-basic data structures along with most of the operations you can perform on them.
+Building distributed systems is hard work. Consensus algorithms like [Paxos](http://en.wikipedia.org/wiki/Paxos_(computer_science)
+or the new hotness [raft](https://ramcloud.stanford.edu/wiki/download/attachments/11370504/raft.pdf) can be tricky to
+understand and even trickier to implement. Distributed locking mechanisms can be shoehorned into Redis (see the "Locking" 
+section in the [SETNX command](http://redis.io/commands/setnx) docs) or 
+[memcached](http://bluxte.net/musings/2009/10/28/simple-distributed-lock-memcached), but these solutions are 
+hacks and not fault tolerant, making them less than ideal.
 
-I like this approach because it gives you a pretty cool end product (a fully functioning 
-datastore) and also forces you to understand a great deal of concepts in a new language.
-To build redis, you need to be able to do a pretty wide number of things.
+But there is a prebaked solution: Apache Zookeeper. If you've never directly used Zookeeper, there's still a
+good chance that you have used it indirectly. It is integrated with systems like Hadoop, Akka, Kafka and
+[many others](https://cwiki.apache.org/confluence/display/ZOOKEEPER/PoweredBy).
 
-* Understand networking for accepting client connections.
-* Understand file operations (reading configs, backing up your data to disk)
-* Understand string parsing for interpreting the [redis protocol](http://redis.io/topics/protocol).
-* Understand builtin data structures in your new language (Lists, Sets, SortedSets, Hashes)
-* Understand concurrency (multiple clients, one underlying datastore)
-* Understand object serialization for writing objects to your backup file
-* Understand how to structure a project in your new language
+Zookeeper lets you store data in what it calls znodes. Znodes are named with filesystem-like paths, for 
+example, `/path/to/node`. Znodes are set up in a tree structure. So `/foo` is the parent of `/foo/bar`.
+Unlike a typical filesystem, you can store data in both `/foo` and `/foo/bar`. Zookeeper is, in many
+ways, just a fault tolerant key value store.
 
-And that is, by no means, an exhaustive list. I like to see if can come up with a way
-to allow for pluggable data types for adding things like [tries](http://en.wikipedia.org/wiki/Trie)
-that are outside the basic functionality of redis. You could also try implementing
-[replication](http://redis.io/topics/replication) of some type or [pub/sub](http://redis.io/topics/pubsub).
-Redis is a pretty good base platform that allows you to do a whole lot of experimentation 
-on top of it.
+However, zookeeper has a few things that make it unique.
 
-I'm not really sure this approach is for everyone. But if you, like me, are someone
-who learns best by doing, building redis can be a quick, directed way to get up
-to speed in a new programming language.
+* Zookeeper lets you set up ephemeral znodes, which are destroyed when the client that created 
+them disconnects. This can be used for things like keeping a list of living servers.
+* Zookeeper lets you watch certain nodes and get updates when their value changes or when new children
+are added to them. This can be used for keeping track of living servers and discovering new servers as
+they become live.
+* Zookeeper lets you create nodes with a sequential suffix. This allows you to create queues in zookeeper
+or set up a chain of automatic failover.
+
+If you're looking for a few examples of what you can do by leveraging these features, the official zookeeper docs
+have [some good examples](http://zookeeper.apache.org/doc/trunk/zookeeperTutorial.html).
