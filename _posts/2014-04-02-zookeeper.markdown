@@ -18,6 +18,8 @@ But there is a prebaked solution: Apache Zookeeper. If you've never directly use
 good chance that you have used it indirectly. It is integrated with systems like Hadoop, Akka, Kafka and
 [many others](https://cwiki.apache.org/confluence/display/ZOOKEEPER/PoweredBy).
 
+<!-- more -->
+
 Zookeeper lets you store data in what it calls znodes. Znodes are named with filesystem-like paths, for 
 example, `/path/to/node`. Znodes are set up in a tree structure. So `/foo` is the parent of `/foo/bar`.
 Unlike a typical filesystem, you can store data in both `/foo` and `/foo/bar`. Zookeeper is, in many
