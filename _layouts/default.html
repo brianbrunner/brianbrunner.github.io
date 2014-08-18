@@ -27,15 +27,16 @@
 
     </script>
 
-    <title>bsquared</title>
+    <title>{% if page.title %}{{ page.title }}{% else %}bsquared{% endif %}</title>
 
 </head>
 <body>
   <div class='header'>
     <div class='inner'>
-      <h1>bsquared</h1>
+      <h1><a href='/'>bsquared</a></h1>
       <h2>a blog about programming and startups by Brian Brunner</h2>
       <div class='social-links'>
+        <a target="_blank" href='mailto:iam@brianbrunner.com' class='fa fa-envelope'></a>
         <a target="_blank" href='https://twitter.com/brianbrunner' class='fa fa-twitter'></a>
         <a target="_blank" href='https://github.com/brianbrunner' class='fa fa-github'></a>
         <a target="_blank" href='https://www.linkedin.com/in/bbrunner' class='fa fa-linkedin'></a>

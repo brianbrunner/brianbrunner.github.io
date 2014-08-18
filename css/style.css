@@ -39,9 +39,10 @@ article blockquote, article header, article section, article footer, .inner {
  width: 100%;
  background-color: #1090C0;
 }
-.header h1 {
+.header h1, .header h1 a {
   font-size: 30px;
   position: relative;
+  color: #fff
 }
 .header h1:before, .header h1:after {
  content: "";
@@ -82,6 +83,9 @@ article blockquote, article header, article section, article footer, .inner {
 }
 .header .social-links a:hover {
   color: #ff1140 !important;
+}
+.header .social-links .fa-envelope {
+  font-size: 24px;
 }
 .header.minimized {
   position: fixed;
