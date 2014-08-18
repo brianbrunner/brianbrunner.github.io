@@ -48,13 +48,13 @@ article blockquote, article header, article section, article footer, .inner {
  position: absolute;
  background-color: #ff1140;
  height: 2px;
- width: 68px;
+ width: 75px;
  bottom: 3px;
  right: 0px;
 }
 .header h1:after {
- right: 81px;
- width: 32px;
+ right: 86px;
+ width: 37px;
 }
 .header h2 {
   font-size: 20px;
@@ -71,6 +71,8 @@ article blockquote, article header, article section, article footer, .inner {
   text-align: right;
 }
 .header .social-links a {
+  transition: 0.25s;
+  -webkit-transition: 0.25s;
   text-align: center;
   width: 24px;
   margin-left: 5px;
