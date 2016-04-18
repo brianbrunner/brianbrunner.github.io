@@ -1,5 +1,6 @@
 name: Brian Brunner
-pygments: true
+highlighter: 'pygments'
 paginate: 5
 excerpt_separator: "<!-- more -->"
 encoding: utf-8
+gems: [jekyll-paginate]
