@@ -101,10 +101,10 @@ article header > a:first-child {
   display: block;
 }
 article header h2 {
-  font-size: 46px; 
-  line-height: 50px;
+  font-size: 30px; 
+  line-height: 40px;
   color: #404346;
-  padding: 0 0 15px 10px;
+  padding: 0 0 25px 10px;
   margin-left: -12px;
 }
 article header h3 {
