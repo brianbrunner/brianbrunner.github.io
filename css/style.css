@@ -4,6 +4,7 @@ body {
 }
 h1, h2, h3, h4, h5, h6 {
   color: #404346;
+  font-weight: normal !important;
 }
 a, a:visited {
   color: #ff1140; 
@@ -49,17 +50,18 @@ article blockquote, article header, article section, article footer, .inner {
  width: 37px;
 }
 .header h2 {
+  margin-top: 5px !important;
+  font-weight: 200 !important;
   font-size: 20px;
 }
 .header h1, .header h2 {
   text-align: right;
   margin: 0;
   color: #303336 !important;
-  font-weight: 300;
 }
 .header .social-links
 {
-  margin-top: 5px;
+  margin-top: 10px;
   text-align: right;
 }
 .header .social-links a {
@@ -68,12 +70,14 @@ article blockquote, article header, article section, article footer, .inner {
   -webkit-transition: 0.25s;
   text-align: center;
   width: 24px;
-  margin: 5px 0 0 5px;
-  font-size: 26px;
+  margin: 5px 0 0 8px;
+  font-size: 22px;
+  line-height: 22px;
   font-family: FontAwesome !important;
 }
 .header .social-links .fa-envelope {
-  font-size: 24px;
+  line-height: 18px;
+  font-size: 18px;
 }
 .header.minimized {
   position: fixed;
@@ -86,6 +90,9 @@ article blockquote, article header, article section, article footer, .inner {
   padding: 0px;
   font-size:20px;
   line-height: 20px;
+}
+article {
+  font-weight: 300;
 }
 article header {
   margin: 110px auto 70px;
@@ -146,13 +153,18 @@ hr {
   background-color: #999;
 }
 code {
-  background-color: #e0e0e0;
+  color: #ddd;
+  background-color: #606060;
   padding: 2px 5px;
 }
 pre {
-  background-color: #e0e0e0;
-  overflow:scroll;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ddd;
+  background-color: #606060;
+  overflow: scroll;
   padding: 14px 20px;
+  max-height: 400px;
 }
 pre code {
   padding: 0;
