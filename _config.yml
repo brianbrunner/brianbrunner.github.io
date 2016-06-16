@@ -1,5 +1,5 @@
 name: Brian Brunner
-highlighter: 'pygments'
+highlighter: 'rouge'
 paginate: 5
 excerpt_separator: "<!-- more -->"
 encoding: utf-8
