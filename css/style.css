@@ -80,7 +80,6 @@ article blockquote, article header, article section, article footer, .inner {
   top: 15px;
   left: 15px;
   padding:12px;
-  border-radius: 4px;
   border: 2px solid #50C0F0;
 }
 .header.minimized h1 {
@@ -135,6 +134,10 @@ article.home section.main *:first-child {
 article.home section.main *:last-child {
   margin-bottom: 10px;
 }
+.see-more {
+  margin-top: 30px;
+  display: inline-block;
+}
 hr {
   margin: 30px 0;
   border: 0px;
@@ -145,11 +148,9 @@ hr {
 code {
   background-color: #e0e0e0;
   padding: 2px 5px;
-  border-radius: 3px;
 }
 pre {
   background-color: #e0e0e0;
-  border-radius: 3px;
   overflow:scroll;
   padding: 14px 20px;
 }
