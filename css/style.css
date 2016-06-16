@@ -6,7 +6,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #404346;
 }
 a, a:visited {
-  color: #707376;
+  color: #ff1140; 
   text-decoration: none !important;
 }
 ul li {
@@ -25,24 +25,20 @@ article blockquote, article header, article section, article footer, .inner {
   margin: 0 auto;
 }
 .header {
- padding: 40px 0;
- border-width: 0;
- border-color: #ccc;
- border-bottom-width: 4px;
- border-style: solid;
- color: #fff;
- width: 100%;
- background-color: #999;
+  color: #303336;
+  padding: 60px 0 80px;
+  border-width: 0;
+  width: 100%;
 }
 .header h1, .header h1 a {
+  color: #303336;
   font-size: 30px;
   position: relative;
-  color: #fff
 }
 .header h1:before, .header h1:after {
  content: "";
  position: absolute;
- background-color: #fff;
+ background-color: #303336;
  height: 2px;
  width: 75px;
  bottom: 3px;
@@ -58,7 +54,7 @@ article blockquote, article header, article section, article footer, .inner {
 .header h1, .header h2 {
   text-align: right;
   margin: 0;
-  color: #fff;
+  color: #303336 !important;
   font-weight: 300;
 }
 .header .social-links
@@ -67,17 +63,14 @@ article blockquote, article header, article section, article footer, .inner {
   text-align: right;
 }
 .header .social-links a {
+  color: #ff1140 !important;
   transition: 0.25s;
   -webkit-transition: 0.25s;
   text-align: center;
   width: 24px;
-  margin-left: 5px;
-  color: #fff !important;
+  margin: 5px 0 0 5px;
   font-size: 26px;
   font-family: FontAwesome !important;
-}
-.header .social-links a:hover {
-  color: #404346; !important;
 }
 .header .social-links .fa-envelope {
   font-size: 24px;
@@ -96,7 +89,7 @@ article blockquote, article header, article section, article footer, .inner {
   line-height: 20px;
 }
 article header {
-  margin: 90px auto 70px;
+  margin: 110px auto 70px;
 }
 article header > a:first-child {
   display: block;
@@ -105,8 +98,8 @@ article header h2 {
   font-size: 46px; 
   line-height: 50px;
   color: #404346;
-  border-bottom: 5px solid #1090C0;
-  padding: 0 0 10px 10px;
+  border-bottom: 3px solid #404346;
+  padding: 0 0 15px 10px;
   margin-left: -12px;
 }
 article header h3 {

@@ -1,8 +1,0 @@
----
-layout: post
-title:  "Big Data is Hard (and You Probably Don't Even Need It)"
-date:   2013-07-12 22:40:00
-categories: bigData fuckHadoop
----
-
-Big Data is a big industry.  
