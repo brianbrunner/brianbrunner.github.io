@@ -2,32 +2,37 @@
 <html>
 <head>
 
-    <meta charset="utf-8"> 
+  <meta charset="utf-8"> 
 
-    <!-- FONT AWESOME -->
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <!-- FONT AWESOME -->
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/style.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/style.css">
 
-    <!-- TYPEKIT -->
-    <script type="text/javascript" src="//use.typekit.net/qhg7xre.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <!-- TYPEKIT -->
+  <script type="text/javascript" src="//use.typekit.net/qhg7xre.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
-    <script>
+  <script>
 
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-        ga('create', 'UA-43239499-1', 'brianbrunner.com');
-        ga('send', 'pageview');
+    ga('create', 'UA-43239499-1', 'brianbrunner.com');
+    ga('send', 'pageview');
 
-    </script>
+  </script>
 
-    <title>{% if page.title %}{{ page.title }}{% else %}bsquared{% endif %}</title>
+  <title>{% if page.title %}{{ page.title }}{% else %}bsquared{% endif %}</title>
+
+  {% if page.title %}
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="og:type" content="news.publishes" />
+  {% endif %}
 
 </head>
 <body>
@@ -247,5 +252,10 @@ function mce_success_cb(resp){
 <!--End mc_embed_signup-->
 </section>
 </article>
+
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57684c75440d4b02"></script>
+
+
 </body>
 </html>

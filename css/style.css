@@ -122,7 +122,17 @@ article header h2 {
 article header h3 {
   margin: -40px 0 0 0;
   font-size: 16px;
+  line-height: 36px;
   color: #606669;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+article header h3 a {
+  display: block;
+}
+article header h3 .separator {
+  margin: 0 6px;
 }
 article .blockquote-wrap {
   padding: 20px 0;
@@ -185,4 +195,16 @@ pre code {
 .pagination {
   margin-top: -40px;
   text-align: center;
+}
+
+/* Add This */
+
+.at-share-tbx-element {
+  height: 36px;
+}
+.at-icon-wrapper {
+  transition: background-color 0.25s;
+}
+#atstbx > .at-share-btn > .at-icon-wrapper:not(:hover) {
+  background-color: #606669 !important;
 }

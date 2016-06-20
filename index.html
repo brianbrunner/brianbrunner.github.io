@@ -9,11 +9,12 @@ title: bsquared
     <header>
  			<a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
  			<h3>
-          {{ post.date | date_to_string }} | 
-          {%if post.commentslink %} 
-            <a href="{{post.commentslink}}" target="_blank">Comments</a>  | 
-          {% endif %}
-          <a href="{{post.url}}">Permalink</a>
+        {{ post.date | date_to_string }}<div class='separator'>|</div>
+        {%if post.commentslink %}
+          <a href="{{ post.commentslink }}" target="_blank">Comments</a>
+          <div class='separator'>|</div>
+        {% endif %}
+        <a href="{{ post.url }}">Permalink</a>
       </h3>
  		</header>
     <section class='main'>
