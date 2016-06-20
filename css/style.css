@@ -94,6 +94,18 @@ article blockquote, article header, article section, article footer, .inner {
 article {
   font-weight: 300;
 }
+article img {
+  display: block;
+  margin:  60px auto 0;
+  border-radius: 3px;
+}
+article .caption {
+  margin-top: 0;
+  margin-bottom: 60px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+}
 article header {
   margin: 110px auto 70px;
 }
@@ -151,18 +163,20 @@ hr {
   width: 100%;
   background-color: #999;
 }
-code {
+article code {
+  font-family: monospace;
   color: #ddd;
   background-color: #606060;
   padding: 2px 5px;
 }
-pre {
+article pre {
+  font-family: monospace;
   font-size: 14px;
   line-height: 24px;
   color: #ddd;
   background-color: #606060;
   overflow: scroll;
-  padding: 14px 20px;
+  padding: 14px 20px 20px;
   max-height: 400px;
 }
 pre code {
