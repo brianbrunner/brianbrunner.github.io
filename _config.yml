@@ -4,3 +4,10 @@ paginate: 5
 excerpt_separator: "<!-- more -->"
 encoding: utf-8
 gems: [jekyll-paginate]
+defaults:
+  -
+    scope:
+      path: ""      # empty string for all files
+      type: posts   # limit to posts
+    values:
+      is_post: true # automatically set is_post=true for all posts

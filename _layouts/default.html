@@ -29,9 +29,26 @@
 
   <title>{% if page.title %}{{ page.title }}{% else %}bsquared{% endif %}</title>
 
+  <meta name="twitter:site" content="@brianbrunner">
+  <meta name="twitter:creator" content="@brianbrunner">
   {% if page.title %}
     <meta property="og:title" content="{{ page.title }}" />
     <meta property="og:type" content="news.publishes" />
+    <meta name="twitter:title" content="{{ page.title }}">
+  {% endif %}
+  {% if page.is_post %}
+    {% if page.preview %}
+      <meta name="twitter:description" content="{{ page.preview }}">
+    {% else %}
+      <meta name="twitter:description" content="{{ page.content | strip_html | truncatewords: 30 }}">
+    {% endif %}
+  {% endif %}
+  {% if page.image %}
+    <meta property="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="{{ page.image }}" />
+  {% else %}
+    <meta property="twitter:card" content="summary">
+    <meta name="twitter:image" content="http://brianbrunner.com/imgs/square.png" />
   {% endif %}
 
 </head>

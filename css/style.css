@@ -21,7 +21,8 @@ ul li:before {
   left: -20px;
 }
 article blockquote, article header, article section p,
-article footer, .inner, #mc_embed_signup {
+article footer, .inner, #mc_embed_signup, article section ul,
+article section .see-more {
   padding: 0 30px;
   max-width: 820px;
   margin: 0 auto;
@@ -99,7 +100,11 @@ article footer, .inner, #mc_embed_signup {
 article {
   font-weight: 300;
 }
+article .image-wrapper {
+  padding: 0 15px;
+}
 article img {
+  box-sizing: border-box;
   max-width: 100%;
   display: block;
   margin:  60px auto 0;
@@ -144,11 +149,28 @@ article header h3 .separator {
 article .blockquote-wrap {
   padding: 20px 0;
   width: 100%;
-  background-color: #999;
+  background-color: #f0f0f0;
   font-size: 26px;
 }
 article .blockquote-wrap blockquote {
-  color: #fff;
+  color: #999;
+  position: relative;
+}
+article .blockquote-wrap blockquote .big-quote {
+  position: absolute;
+  top: 26px;
+  left: -15px;
+}
+article .blockquote-wrap .tweet-quote {
+  width: 130px;
+  text-align: center;
+  display: block;
+  font-size: 16px;
+  margin: 10px auto 0px;
+  padding: 6px;
+  border: 2px solid #55acee;
+  color: #55acee !important;
+  border-radius: 8px;
 }
 article blockquote {
   padding: 20px;
@@ -173,7 +195,7 @@ article.home section.main > *:last-child {
   margin-bottom: 10px;
 }
 .see-more {
-  margin-top: 30px;
+  margin-top: 30px !important;
   display: inline-block;
 }
 hr {

@@ -1,9 +1,12 @@
 <!-- _includes/quote.html -->
 <div class='blockquote-wrap'>
   <blockquote class='tk-adelle'>
+    <span class='fa fa-quote-left big-quote'></span>
     {{ include.text }}
   </blockquote>
-  <a class='tweet-quote' href=''>
+  <a class='tweet-quote' 
+     target='_blank'
+     href='http://twitter.com/share?text={{ include.text | uri_escape }} {{ "@" | uriescape }}brianbrunner brianbrunner.com{{ page.url }}&url=brianbrunner.com{{ page.url }}'>
     <span class='fa fa-twitter'></span> Tweet This
   </a>
 </div>
