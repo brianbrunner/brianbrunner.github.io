@@ -20,11 +20,15 @@ ul li:before {
   top: 4px;
   left: -20px;
 }
-article blockquote, article header, article section p, article footer, .inner {
+article blockquote, article header, article section p,
+article footer, .inner, #mc_embed_signup {
   padding: 0 30px;
   max-width: 820px;
   margin: 0 auto;
   display: block;
+}
+#mc_embed_signup {
+  margin: 40px auto !important;
 }
 .header {
   color: #303336;
