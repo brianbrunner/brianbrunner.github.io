@@ -237,6 +237,7 @@ pre code {
 .at-icon-wrapper {
   transition: background-color 0.25s;
 }
-#atstbx > .at-share-btn > .at-icon-wrapper:not(:hover) {
+#atstbx > .at-share-btn > .at-icon-wrapper:not(:hover),
+#atstbx2 > .at-share-btn > .at-icon-wrapper:not(:hover) {
   background-color: #606669 !important;
 }
