@@ -20,14 +20,15 @@ ul li:before {
   top: 4px;
   left: -20px;
 }
-article blockquote, article header, article section, article footer, .inner {
+article blockquote, article header, article section p, article footer, .inner {
   padding: 0 30px;
   max-width: 820px;
   margin: 0 auto;
+  display: block;
 }
 .header {
   color: #303336;
-  padding: 60px 0 80px;
+  padding: 20px 0 40px;
   border-width: 0;
   width: 100%;
 }
@@ -95,6 +96,7 @@ article {
   font-weight: 300;
 }
 article img {
+  max-width: 100%;
   display: block;
   margin:  60px auto 0;
   border-radius: 3px;
@@ -107,7 +109,7 @@ article .caption {
   line-height: 20px;
 }
 article header {
-  margin: 110px auto 70px;
+  margin: 80px auto 70px;
 }
 article header > a:first-child {
   display: block;
@@ -125,11 +127,12 @@ article header h3 {
   line-height: 36px;
   color: #606669;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
 }
 article header h3 a {
-  display: block;
+  display: inline-block;
 }
 article header h3 .separator {
   margin: 0 6px;
@@ -140,9 +143,12 @@ article .blockquote-wrap {
   background-color: #999;
   font-size: 26px;
 }
+article .blockquote-wrap blockquote {
+  color: #fff;
+}
 article blockquote {
   padding: 20px;
-  color: #fff;
+  color: #333;
   font-weight: normal;
   position: relative;
 }
@@ -151,15 +157,15 @@ article section, article footer, article header {
   line-height: 36px;
 }
 article section p {
-  margin: 40px 0;
+  margin: 40px auto;
 }
 article.home {
   margin-bottom: 120px;
 }
-article.home section.main *:first-child {
+article.home section.main > *:first-child {
   margin-top: -40px;
 }
-article.home section.main *:last-child {
+article.home section.main > *:last-child {
   margin-bottom: 10px;
 }
 .see-more {
