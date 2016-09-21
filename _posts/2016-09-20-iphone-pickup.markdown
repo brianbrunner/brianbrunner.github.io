@@ -15,7 +15,7 @@ Anyway, I'm not one to wait. So I decided to over-engineer my way out of the pro
 
 <!-- more -->
 
-I knew the iPhone 7 Plus would most likely require me waiting in line overnight to get one on launch day. There were even some rumblings that the 7 Plus might not be avaiable unless you had a preorder. But I also knew that iPhones are usually available for in-store pickup a few days after release. However, they usually go pretty quick. So naturally, I figured I would build a scraper to do the dirty work of checking for me.
+I knew the iPhone 7 Plus would most likely require me waiting in line overnight to get one on launch day. There were even some rumblings that the 7 Plus might not be available unless you had a preorder. But I also knew that iPhones are usually available for in-store pickup a few days after release. However, they usually go pretty quick. So naturally, I figured I would build a scraper to do the dirty work of checking for me.
 
 First things first, I needed to figure out how to get in-store pickup availability info. I took a quick trip through the iPhone order flow and pulled up the in-store pickup availability checker. I checked out the XHR section of the Network Tab of the Chrome Inspector and saw that, thankfully, Apple was using a pretty straightforward JSON API.
 
@@ -31,7 +31,7 @@ For those who are curious, this is the URL I used.
 http://www.apple.com/shop/retail/pickup-message?parts.0=MN562LL%2FA&location=94063&little=true&cppart=ATT%2FUS
 ```
 
-It is explicitly for the iPhone 7 Plus Rose Gold 128GB model and it checks near Redwood City. The `parts.0` param is a device id that is unique per model. If you are trying this for a different device spec, it's probably easiest to just repeat my process to get its id. The `location` param is just your zipcode.
+It is explicitly for the iPhone 7 Plus Rose Gold 128GB model and it checks near Redwood City. The `parts.0` param is a device id that is unique per model. If you are trying this for a different device spec, it's probably easiest to just repeat my process to get its id. The `location` param is just your zip code.
 
 Next up, how to get notified. I've worked with [Twilio](https://www.twilio.com/) in the past and had nothing but success, so I figured I would get my scraper to notify when iPhones were available for pickup via text. 
 
