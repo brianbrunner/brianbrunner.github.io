@@ -43,8 +43,8 @@ from twilio.rest import TwilioRestClient
 import requests
 import time
 
-ACCOUNT_SID = 'XXXXXXXXXXXXXXXXXXXXXX'
-AUTH_TOKEN = 'XXXXXXXXXXXXXXXXXXXXXX'
+ACCOUNT_SID = 'XXXXXXXXXXXXXXXXXXXXXX' # Replace with your Twilio account sid
+AUTH_TOKEN = 'XXXXXXXXXXXXXXXXXXXXXX' # Replace with your Twilio auth token
 
 client = TwilioRestClient(ACCOUNT_SID, AUTH_TOKEN)
 
@@ -83,9 +83,9 @@ while True:
       if pickupStatus != lastPickupStatus:
         lastPickupStatus = pickupStatus
         client.messages.create(
-          to='+12345678910',
-          from_='+19876543210',
-          body='iPhone 7 Plus Pickup Status: %s (%s)' % pickupStatus
+          to='+12345678910', # Replace with your phone number
+          from_='+19876543210', # Replace with the number from Twilio
+          body='iPhone 7 Plus Pickup Status: %s' % pickupStatus
         )
 
   # Catch-all, mostly just in case we have a network error
