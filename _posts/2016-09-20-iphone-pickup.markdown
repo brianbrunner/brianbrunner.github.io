@@ -90,9 +90,8 @@ while True:
 
   # Catch-all, mostly just in case we have a network error
   # This is sloppy but functional, remember?
-  except:
-    print "Had an issue. Will try again soon."
-    pass
+  except Exception as e:
+    print e
 
   # Only check once a minute
   time.sleep(60)
