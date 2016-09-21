@@ -2,7 +2,6 @@
 layout: post
 title:  "How I Fucked Up My iPhone Preorder and Programmed My Way Out Of It"
 date:   2016-09-20 23:00:00
-categories: recruiting developers
 ---
 
 For the second time in 3 years, I fucked up my iPhone preorder. The first time was due to Apple accepting
