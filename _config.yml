@@ -1,5 +1,8 @@
 name: Brian Brunner
-highlighter: 'rouge'
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 paginate: 5
 excerpt_separator: "<!-- more -->"
 encoding: utf-8
